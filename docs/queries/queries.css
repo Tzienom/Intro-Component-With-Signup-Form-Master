@@ -1,0 +1,62 @@
+@media(max-width: 200px) {
+    
+    .free-trial-box { padding: 1em 2em; }
+
+}
+
+
+@media(min-width: 380px) {
+    
+    body, input, #claim-trial { font-size: 1rem; }
+    
+    .acknowledgement { font-size: 0.8125rem; }
+
+}
+
+
+@media(min-width: 700px) {
+    
+    body { background: var(--Red) url("../images/bg-intro-desktop.png") no-repeat center/cover; }
+
+}
+
+
+@media(min-width: 1100px) {
+    
+    body { text-align: left; }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container {
+        width: 80%;
+        max-width: 1440px;
+        margin: 6em auto;
+    }
+    
+    .col { width: 45%; }
+    
+    .col-1, footer {
+        animation: slide-in-left ease 2s;
+    }
+    
+    h1 { 
+        font-size: 3.125rem;
+        line-height: 1;
+    }
+    
+    .free-trial-box { 
+        margin-bottom: 1.5em;
+        animation: slide-in-top ease 2s;
+    }
+    
+    #signup {
+        animation: slide-in-bottom ease 2s;
+    }
+    
+    footer .container { margin: 0 auto; }
+
+}

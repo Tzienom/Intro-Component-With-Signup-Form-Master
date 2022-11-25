@@ -1,0 +1,17 @@
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-100%);
+    }
+}
