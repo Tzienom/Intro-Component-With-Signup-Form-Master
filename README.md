@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![375px Screenshot](./screenshot/375px.png)
-![1440px Screenshot](./screenshot/1440px.png.png)
+![1440px Screenshot](./screenshot/1440px.png)
 ![Code Screenshot](./screenshot/code.png)
 ![Code Screenshot](./screenshot/code2.png)
 ![Code Screenshot](./screenshot/code3.png)
@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://tzienom.github.io/Intro-Component-With-Signup-Form-Master/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-master--fkdr7aJEi)
 
 ## My process
 
