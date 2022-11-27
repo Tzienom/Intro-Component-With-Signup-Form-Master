@@ -13,7 +13,7 @@ let errorImg = document.querySelectorAll('.error-img');
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     checkInputs();
 });
