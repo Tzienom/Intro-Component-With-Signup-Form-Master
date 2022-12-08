@@ -15,7 +15,7 @@ let errorImg = document.querySelectorAll('.error-img');
 form.addEventListener('submit', (e) => {
     // e.preventDefault();
 
-    checkInputs();
+    if (!checkInputs()) e.preventDefault();
 });
 
 function checkInputs() {
@@ -61,6 +61,8 @@ function setErrorFor(input, message) {
     error.innerText = message;
     errorImg.style.display = 'block';
     formControl.className = 'form-control error';
+
+    return false;
 }
 
 function setSuccessFor(input) {
@@ -69,4 +71,6 @@ function setSuccessFor(input) {
 
     errorImg.style.display = 'none';
     formControl.className = 'form-control success';
+
+    return true;
 }
