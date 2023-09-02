@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site](https://tzienom.github.io/Intro-Component-With-Signup-Form-Master/)
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-master--fkdr7aJEi)
+- Live Site URL: [https://tzienom.github.io/Intro-Component-With-Signup-Form-Master/](https://tzienom.github.io/Intro-Component-With-Signup-Form-Master/)
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-component-with-signup-form-master--fkdr7aJEi](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-master--fkdr7aJEi)
 
 ## My process
 

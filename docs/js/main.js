@@ -13,9 +13,11 @@ let errorImg = document.querySelectorAll('.error-img');
 
 
 form.addEventListener('submit', (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
-    if (!checkInputs()) e.preventDefault();
+    if (checkInputs()) {
+        form.submit();
+    }
 });
 
 function checkInputs() {
@@ -26,8 +28,12 @@ function checkInputs() {
 
     if (firstNameValue === "") {
         setErrorFor(firstName, "First Name cannot be empty");
+        return false;
+
     } else if (regName.test(firstNameValue)) {
         setErrorFor(firstName, "First Name can only contain letters");
+        return false;
+        
     } else {
         setSuccessFor(firstName);
     }
@@ -42,15 +48,25 @@ function checkInputs() {
 
     if (emailValue === "") {
         setErrorFor(email, "Email cannot be empty");
+        return false;
+
+    } else if (!regEmail.test(emailValue)) {
+        setErrorFor(email, "Email is not valid");
+        return false;
+    
     } else {
         setSuccessFor(email);
     }
 
     if (passwordValue === "") {
         setErrorFor(password, "Password cannot be empty");
+        return false;
+
     } else {
         setSuccessFor(password);
     }
+
+    return true;
 }
 
 function setErrorFor(input, message) {
