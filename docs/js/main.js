@@ -33,15 +33,19 @@ function checkInputs() {
     } else if (regName.test(firstNameValue)) {
         setErrorFor(firstName, "First Name can only contain letters");
         return false;
-        
+
     } else {
         setSuccessFor(firstName);
     }
 
     if (lastNameValue === "") {
         setErrorFor(lastName, "Last Name cannot be empty");
+        return false;
+
     } else if(regName.test(lastNameValue)) {
         setErrorFor(lastName, "Last Name can only contain letters");
+        return false;
+
     } else {
         setSuccessFor(lastName);
     }
@@ -77,8 +81,6 @@ function setErrorFor(input, message) {
     error.innerText = message;
     errorImg.style.display = 'block';
     formControl.className = 'form-control error';
-
-    return false;
 }
 
 function setSuccessFor(input) {
@@ -87,6 +89,4 @@ function setSuccessFor(input) {
 
     errorImg.style.display = 'none';
     formControl.className = 'form-control success';
-
-    return true;
 }
